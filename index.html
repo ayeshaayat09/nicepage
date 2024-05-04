@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="John Doe" />
+    <title>exam four</title>
+
+    <!-- box icon  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- font-awesome link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- bootstrap css  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <link rel="stylesheet" href="./asset/css/media.css" />
+    <link rel="stylesheet" href="./asset/css/loder.css">
+  </head>
+  <body>
+    <!-- loader annimation  -->
+
+    <div class="wrapper" id="loader-wrp">
+      <div class="loader"></div>
+      <div class="wording">
+        <div class="letter">L</div>
+        <div class="letter">o</div>
+        <div class="letter">a</div>
+        <div class="letter">d</div>
+        <div class="letter">i</div>
+        <div class="letter">n</div>
+        <div class="letter">g</div>
+        <div class="letter circle"></div>
+        <div class="letter circle"></div>
+        <div class="letter circle"></div>
+      </div>
+    </div>
+
+    <!-- up-down button -->
+    <div id="goTop">
+      <i class="fa-solid fa-square-caret-down"></i>
+    </div>
+
+    <!-- header section start  -->
+    <header class="container-fluid bg-danger" id="full-navbar">
+      <nav class="container bg-danger text-black">
+        <div class="logo">
+          <a href="#"><img src="./asset/image/logo.png" alt="Logo" /></a>
+        </div>
+        <ul id="navbar ">
+          <li><a href="#">Home </a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu-icon">
+          <i class="bx bx-menu" id="show-icon" onclick="showMenu()"></i>
+          <i class="bx bx-x d-none" id="hide-icon" onclick="hideMenu()"></i>
+        </div>
+        <!-- <button class="btn">Get it support</button> -->
+
+        <div class="button-box">
+          <button class="seven">search more</button>
+        </div>
+      </nav>
+    </header>
+    <!-- header section end  -->
+
+    <!-- hero section start  -->
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide slider"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div
+          class="carousel-item carousel-item-1 active"
+          data-bs-interval="10000"
+        >
+          <div class="container">
+            <div class="row slider-content">
+              <div class="col-md-6">
+                <div class="pt-md-5 mt-md-5">
+                  <h4 class="text-white display-3">
+                    The Best Steakhouse in California
+                  </h4>
+                  <p class="text-warning">
+                    Open for over 15 years, our restaurant near LAX has built a
+                    strong reputation on big taste and bold flavors, earning it
+                    raves from locals and travelers alike.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="d-md-flex align-items-center justify-content-center h-100"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-outline-light text-white py-3 px-5 fw-bold"
+                  >
+                    BOOK YOUR TABLE NOW
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-item-2" data-bs-interval="2000">
+          <div class="container">
+            <div class="row slider-content">
+              <div class="col-md-6">
+                <div class="pt-md-5 mt-md-5">
+                  <h4 class="text-white display-3">
+                    The Best Steakhouse in California
+                  </h4>
+                  <p class="text-warning">
+                    Open for over 15 years, our restaurant near LAX has built a
+                    strong reputation on big taste and bold flavors, earning it
+                    raves from locals and travelers alike.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="d-md-flex align-items-center justify-content-center h-100"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-outline-light text-white py-3 px-5 fw-bold"
+                  >
+                    BOOK YOUR TABLE NOW
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-item-3">
+          <div class="container">
+            <div class="row slider-content">
+              <div class="col-md-6">
+                <div class="pt-md-5 mt-md-5">
+                  <h4 class="text-white display-3">
+                    The Best Steakhouse in California
+                  </h4>
+                  <p class="text-warning">
+                    Open for over 15 years, our restaurant near LAX has built a
+                    strong reputation on big taste and bold flavors, earning it
+                    raves from locals and travelers alike.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="d-md-flex align-items-center justify-content-center h-100"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-outline-light text-white py-3 px-5 fw-bold carousel-btn"
+                  >
+                    BOOK YOUR TABLE NOW
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- hero section end  -->
+
+    <!-- Steakhouse section start -->
+    <section class="steakhouse-section bg-white">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-12 col-lg-6 inner-text">
+            <h2 class="fw-bolder pb-4 pt-5 mt-5 display-4">
+              Stef's Steakhouse
+            </h2>
+            <p class="">
+              Article evident arrived express highest men did boy. Mistress
+              sensible entirely am so. Quick can manor smart money hopes worth
+              too. Comfort produce husband boy her had hearing. Law others
+              theirs passed but wishes. You day real less till dear read.
+              Considered use dispatched melancholy sympathize discretion led. Oh
+              feel if up to till like. He an thing rapid these after going drawn
+              or. Timed she his law the spoil round defer. In surprise concerns
+              informed betrayed he learning is ye. Ignorant formerly so ye
+              blessing. He as spoke avoid given downs money on we. Of properly
+              carriage shutters ye as wandered up repeated moreover.
+            </p>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="stef-ineer text-end">
+              <p class="stef-ineer-text pb-5 pt-5 mt-5">
+                Article evident arrived express highest men did boy. Mistress
+                sensible entirely am so. Quick can manor smart money hopes worth
+                too. Comfort produce husband boy her had hearing. Law others
+                theirs passed but wishes. You day real less till dear read.
+                Considered use dispatched melancholy sympathize discretion led.
+                Oh feel if up to till like. He an thing rapid these after going
+                drawn or.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-light text-white py-3 px-5 rounded-5 bg-pink carousel-btn"
+              >
+                BOOK YOUR TABLE NOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Steakhouse section end -->
+
+    <!-- Executive Chef section start  -->
+    <section class="Executive-Chef-section">
+      <div class="container">
+        <div class="m-md-5 chef-inner">
+          <div class="pt-5 mt-5">
+            <h1 class="display-1 fw-bolder pt-5 mt-5 Chef-section-inner">
+              Victor Perry <br />
+              Executive Chef
+            </h1>
+          </div>
+          <div class="">
+            <p class="pb-5 pt-3">
+              Open for over 15 years, our restaurant near LAX has built a
+              <br />strong reputation on big taste and bold flavors, earning it
+              <br />
+              raves from locals and travelers alike.
+            </p>
+          </div>
+          <div class="pb-5 mb-5">
+            <button
+              type="button"
+              class="btn btn-outline-light text-black py-3 px-5 rounded-5 bg-white carousel-btn"
+            >
+              READ THE INTERVIEWS
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Executive Chef section end -->
+
+    <!-- offer section start  -->
+    <section class="steakhouse-section bg-white">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-12 col-lg-6 inner-text">
+            <h2 class="fw-bolder pt-5 mt-5 display-4">
+              Give the Gift of steakhouse
+            </h2>
+            <p class="pb-5">
+              Article evident arrived express highest men did boy. Mistress
+              <br />
+              sensible entirely am so. Quick can manor smart money hopes worth
+              <br />
+              too. Comfort produce husband boy her had hearing. Law others
+              <br />
+              theirs passed but wishes.
+            </p>
+            <button
+              type="button"
+              class="btn btn-outline-light text-white py-3 px-5 rounded-5 bg-black fw-semibold carousel-btn"
+            >
+              READ THE INTERVIEWS
+            </button>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="stef-ineer text-end">
+              <h2 class="fw-bolder pt-5 mt-5 display-4">
+                Get the Latest News <br />
+                and Offers
+              </h2>
+              <p class="pb-5">
+                Article evident arrived express highest men did boy. Mistress
+                <br />
+                sensible entirely am so. Quick can manor smart money hopes worth
+                <br />
+                too. Comfort produce husband boy her had hearing. Law others
+                <br />
+                theirs passed but wishes.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-light text-white py-3 px-5 rounded-5 bg-pink fw-semibold carousel-btn"
+              >
+                BOOK YOUR TABLE NOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- offer section end -->
+
+        <!-- card section start   -->
+        <section class="card-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bolder display-4">Lunch </h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, facilis!</p>
+                    <button
+                    type="button"
+                    class="btn btn-outline-light text-white py-2 px-5 rounded-5 bg-pink fw-semibold carousel-btn carousel-btn"
+                  >
+                     View more
+                  </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bolder display-4">
+                      Dinner
+                       </h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, facilis!</p>
+                    <button
+                    type="button"
+                    class="btn btn-outline-light text-white py-2 px-5 rounded-5 bg-pink fw-semibold carousel-btn"
+                  >
+                     View more
+                  </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bolder display-4">
+                      Brunch
+                       </h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, facilis!</p>
+                    <button
+                    type="button"
+                    class="btn btn-outline-light text-white py-2 px-5 rounded-5 bg-pink fw-semibold carousel-btn"
+                  >
+                     View more
+                  </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- card section end-->
+        <!-- other information start  -->
+        <section class="other-information">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <h1 class="display-4 fw-bold p-2">Dinner</h1>
+                <h5 class="fw-light pt-2 pb-3">STARTERS</h5>
+                <p class="fw-bolder">OYSTERS ON THE HALF SHELL</p>
+                <p>
+                  chef's choice, red wine mignonette | ½ <br />
+                  dozen* $22 / dozen* $39
+                </p>
+                <p class="fw-bolder">CLASSIC SHRIMP COCKTAIL</p>
+                <p>
+                  poached jumbo mexican white shrimp, <br />
+                  house cocktail sauce, horseradish, lemon | <br />26
+                </p>
+                <p class="fw-bolder">BBQ SHRIMP</p>
+                <p>
+                  grilled jumbo shrimp, house bbq sauce, <br />spicy cabbage slaw |
+                  27
+                </p>
+                <p class="fw-bolder">SMOKED DEVILED EGGS</p>
+                <p>chino valley farm eggs, bacon confit, hickory smoke | 15</p>
+                <p class="fw-bolder">PAN SEARED DIVER SCALLOPS</p>
+                <p>
+                  butternut squash puree, roasted pearl onions, <br />bacon,
+                  bordelaise | 26
+                </p>
+                <h5 class="fw-lighter pt-2 pb-2">SEAFOOD TOWERS</h5>
+                <p>
+                  <span class="fw-bolder">NICK*</span> <br />serves 2; half maine
+                  lobster, 6 assorted oysters, <br />
+                  2 oz diver scallops, 4 <br />
+                  mexican white shrimp, 6 prince edward<br />
+                  island mussels | 125 <br />
+                  <span class="fw-bolder pt-1 pb-1">STEF*</span> <br />serves 3-4;
+                  half maine lobster, <br />
+                  9 assorted oysters, <br />3 oz diver scallops,
+                  <br />
+                  10 mexican white shrimp, <br />12 prince edward island mussels |
+                  195
+                </p>
+                <h5 class="fw-bolder">salads</h5>
+                <p>
+                  <span class="pt-1 pb-1 fw-bolder">N+S CAESAR</span><br />
+                  romaine hearts, caesar dressing, <br />
+                  parmigiano-reggiano, cracked black <br />
+                  pepper, warm olive oil croutons* | 16
+                  <br />
+                  <span class="fw-bolder"> ICEBERG WEDGE</span> <br />
+                  smoked bacon, blue cheese crumbles, <br />
+                  cherry tomatoes, pickled onions, heirloom ,<br />
+                  radish, maytag blue cheese vinaigrette | <br />
+                  15
+                  <br />
+                  <span class="fw-bolder">ROASTED SQUASH</span> <br />
+                  black kale, goat cheese, Marcona almonds, <br />
+                  shallot vinaigrette | 14 <br />
+                  <span class="fw-bolder pt-2 pb-2">FORAGED GARDEN SALAD</span>
+                  <br />baby mixed greens, radicchio, shallot <br />vinaigrette | 15
+                  <br />
+                  <span class="fw-bolder">BURRATA </span> <br />persimmons, ciabatta
+                  croutons, <br />pomegranate molasses | 16
+                </p>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="mt-5 my-5">
+                  <h5 class="fw-light pt-2 pb-3 pt-5 mt-5"> WAGYU</h5>
+                  <p><span class="fw-bolder">A-5 NEW YORK STRIP</span> 3 oz.</p>
+                  <p>miyazaki prefecture, japan | 89</p>
+                  <h5 class="fw-light pt-2 pb-2">E N T R E E S</h5>
+                  <p>
+                    <span class="fw-bolder">N+S BURGER </span> 8oz angus beef patty,
+                    truffle aioli, smoked bacon, arugula, maitake <br />
+                    mushroom, bordelaise, aged white cheddar,<br />
+                    served with kennebec fries | 28
+                  </p>
+                  <p class="fw-bolder">HALF JIDORI CHICKEN</p>
+                  <p>free-range, temecula, ca | 32</p>
+                  <p class="fw-bolder">
+                    ATLANTIC SALMON <span>8 oz.</span><br /> <p class="fw-bolder">MARKET FISH </p><br />
+                    <p class="fw-bolder"> LB GRILLED MAINE LOBSTER</p>
+                  </p>
+                  <p>
+                    served with butter-poached clasws, <br />drawn butter, lemon |
+                    99
+                  </p>
+                  <h5 class="pt-2 pb-2 fw-light">ACCESSORIES</h5>
+                  <p class="fw-bolder">
+                    MAYTAG BLUE CHEESE<br />
+                    | 7<br />
+                     <p class="fw-bolder">BBQ SHRIMP </p> <br />| 24<br />
+                    <p class="fw-bolder">PAN SEARED DIVER SCALLOPS </p><br />
+                    (2) | 24 <br />
+                    <p class="fw-bolder"> HALF MAINE LOBSTER </p><br />| 47 <br />
+                     <p class="fw-bolder">GRILLED THICK CUT BACON</p> <br />
+                    | 12
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- other information end -->
+    
+        <!-- Meet and Fish section  start -->
+        <section class="Meet-Fish-section">
+          <div class="container">
+            <div class=" Meet-Fish-inner">
+              <div class="pt-5 mt-5">
+                <h1 class="display-1 fw-bolder pt-5 mt-5 text-end">
+                  The Way of <br/> Preparing Meat
+                </h1>
+              </div>
+              <div class="">
+                <p class="pb-5 pt-3 text-end">
+                  Open for over 15 years, our restaurant near LAX has built a
+                  strong reputation on big taste and bold flavors, earning it
+                  
+                  raves from locals and travelers alike.
+                </p>
+              </div>
+              <div class="pb-5 mb-5">
+                <button
+                type="button"
+                class="btn btn-outline-light text-white py-3 px-5 rounded-5 bg-pink fw-semibold carousel-btn"
+              >
+                BOOK NOW
+              </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Meet and Fish section  end -->
+    
+      <!-- contract section start  -->
+     <section class="contract-section">
+       <div class="container">
+       <div class="row">
+          <div class="col-12 col-lg-6">
+             <div class="pt-5">
+               <h3 class="fw-bolder p-5 ">Address and Hours</h3>
+               <p class="">660 S. Hope Street, Los Angeles, CA, 90071<br/>
+                OPEN DAILY</p>
+                <p> <span class="fw-bolder ">Sunday</span> 5PM-9PM</p>
+                <p> <span class="fw-bolder ">Monday</span> 4PM-9PM</p>
+                <p> <span class="fw-bolder ">Tuesday-Thursday</span> 11:30AM-2:30PM & 4PM-9PM</p>
+                <p> <span class="fw-bolder "> Friday</span> 4PM-10PM</p>
+                <p> <span class="fw-bolder ">Saturday</span> 5PM-10PM</p>
+             </div>
+          </div>
+          <div class="col-12 col-lg-6">
+             <div class="pt-5">
+              <h3 class="fw-bolder p-5 ">Book Your table Now</h3>
+              <form action="" onsubmit="handleForm(event)">
+                <div class="form-control">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" id="name" placeholder="abc" value="" />
+                  <p></p>
+                </div>
+                <div class="form-control">
+                  <label for="email">Your Email;</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="xyz@gmail.com"
+                    value=""
+                  />
+                  <p></p>
+                </div>
+                <div class="form-control">
+                  <label for="message">Your Message</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="10"
+                    rows="5"
+                    placeholder="write your message"
+                  ></textarea>
+                  <p></p>
+                </div>
+                <button type="submit">Submit</button>
+              </form>
+             </div>
+          </div>
+       </div>
+       </div>
+     </section>
+      <!-- contact section end -->
+    
+      <footer class=" h-25 bg-pink py-5 pt-5">
+        <div class="container">
+           
+         <div class="d-flex justify-content-between align-items-center inner">
+           <img src="./asset/image/logo.png" alt="">
+            <p class="text-black">© 2020 Success M4 Theme by incerate</p>
+         </div>
+        </div>
+    </footer>
+    <!-- footer section end -->
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- main js  -->
+    <script src="./asset/js/sricpt.js"></script>
+
+    <!-- emailjs link  -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "QyISCK56U0lQ1CJAm",
+        });
+      })();
+    </script>
+    <!-- sweetalert2  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- loder  -->
+
+    <script src="./asset/js/loder.js"></script>
+  </body>
+</html>
